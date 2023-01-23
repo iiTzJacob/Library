@@ -7,6 +7,11 @@
     font-family: "Sunny Spells";
 }
 
+.new-book {
+    font-family: "Sunny Spells";
+    font-size: 2rem;
+}
+
 .books {
     display: flex;
     justify-content: center;
@@ -14,7 +19,19 @@
 }
 
 td {
-  padding-right: 7rem;  
-  padding-left: 7rem;
-  padding-top: 1rem;
+    font-size: 2rem;
+    padding-right: 7rem;  
+    padding-left: 7rem;
+    padding-top: 1rem;
+}
+
+#add {
+    font-family: "Sunny Spells";
+    font-size: 2rem;
+    background: none;
+    border: none;
+}
+
+#add:hover {
+    color: blue;
 }
