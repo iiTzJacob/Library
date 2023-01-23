@@ -9,12 +9,19 @@
 </head>
 <body>
     <div class="main">
-        <header>
-            <h1>Library</h1>
-            <ul>
-                <li><button id="add">New Book</button></li>
-            </ul>
-        </header>
+        <h1>Library</h1>
+        <div class="new-book">
+            <label for="title">Title:</label>
+            <input type="text" id="title">
+
+            <label for="author">Author:</label>
+            <input type="text" id="author">
+
+            <label for="pages">Page Count:</label>
+            <input type="number" id="pages" min="0">
+        </div>
+
+        <button type="submit">Add Book</button>
     </div>
     
     <script src="main.js"></script>
