@@ -1,0 +1,11 @@
+.books {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+td {
+  padding-right: 7rem;  
+  padding-left: 7rem;
+  padding-top: 1rem;
+}
