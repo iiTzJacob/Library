@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from 'uuid';
+
 const books = document.querySelector(".books")
 const addButton = document.getElementById("add")
 
@@ -7,22 +9,23 @@ addButton.addEventListener("click", function () {
 })
 
 let Book = {
+    id: uuid,
     title: "",
     author: "",
     pageNumber: 0,
 }
 
-let book1 = Object.create(Book)
-book1.title = "Harry Potter"
-book1.author = "JK Rowling"
-book1.pageNumber = 330
+// let book1 = Object.create(Book)
+// book1.title = "Harry Potter"
+// book1.author = "JK Rowling"
+// book1.pageNumber = 330
 
-let book2 = Object.create(Book)
-book2.title = "Family Guy"
-book2.author = "Seth Farlane"
-book2.pageNumber = 500
+// let book2 = Object.create(Book)
+// book2.title = "Family Guy"
+// book2.author = "Seth Farlane"
+// book2.pageNumber = 500
 
-let library = [book1, book2]
+let library = []
 
 function book() {
     let table = "<table><tr><th>Title</th><th>Author</th><th>Page Numbers</th></tr>"
@@ -43,6 +46,7 @@ function addBookToLibrary() {
     let pageNumber = document.getElementById("pages").value
 
     let newBook = Object.create(Book)
+    newBook.id = uuid()
     newBook.title = title
     newBook.author = author
     newBook.pageNumber = pageNumber
